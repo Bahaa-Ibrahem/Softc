@@ -24,9 +24,7 @@ export class ProductDetailsComponent implements OnInit {
 
   getProduct(productId: number) {
     this.products = this.productSrv.getProducts();
-    console.log(this.products)
     this.product = this.products.filter((prosuct) => {  return prosuct.ProductId == productId})[0];
-    console.log(this.product)
   }
 
 }

@@ -8,25 +8,25 @@
           <div class="mat-elevation-z8">
             <table mat-table [dataSource]="dataSource" matSort>
           
-              <!-- Product ID Column -->
+              <!-- Order ID Column -->
               <ng-container matColumnDef="OrderId">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Order Id </th>
                 <td mat-cell *matCellDef="let row"> {{row.OrderId}} </td>
               </ng-container>
           
-              <!-- Product Name Column -->
+              <!-- Order Date Column -->
               <ng-container matColumnDef="OrderDate">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Order Date </th>
                 <td mat-cell *matCellDef="let row"> {{row.OrderDate}} </td>
               </ng-container>
           
-              <!-- Product Price  Column -->
+              <!-- User Id Column -->
               <ng-container matColumnDef="UserId">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> User Id </th>
                 <td mat-cell *matCellDef="let row"> {{row.UserId}} </td>
               </ng-container>
           
-              <!-- Available Pieces Column -->
+              <!-- Payment Type Column -->
               <ng-container matColumnDef="PaymentType">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Payment Type </th>
                 <td mat-cell *matCellDef="let row"> {{row.PaymentType}} </td>

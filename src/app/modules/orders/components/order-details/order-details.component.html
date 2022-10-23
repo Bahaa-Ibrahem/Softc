@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+
+        <div class="card text-center" *ngIf="order">
+            <div class="card-body">
+              <h2 class="card-title">Order Id</h2>
+              <p class="card-text">{{order.OrderId}}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <p>Products</p>
+              <li *ngFor="let product of order.Products" class="list-group-item">
+                <h2>Product Id {{product.ProductId}} </h2>
+                <h2>Product Quantity {{product.Quantity}}</h2>
+                </li>
+            </ul>
+          </div>
+
+    </div>
+</div>

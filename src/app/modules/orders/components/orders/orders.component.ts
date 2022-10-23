@@ -28,7 +28,7 @@ export class OrdersComponent implements OnInit {
   }
 
   loadData() {
-    this.orders = this.orderSrv.getOrders();
+    this.orders = this.orderSrv.getOrders().filter((order) => { return order.OrderDate.replace(' ', 'T') });
     this.dataSource = new MatTableDataSource(this.orders);
   }
 
@@ -47,7 +47,7 @@ export class OrdersComponent implements OnInit {
   }
 
   openOrderDetals(orderId: number) {
-    this.router.navigate([`product/product-details/${orderId}`])
+    this.router.navigate([`order/order-details/${orderId}`])
   }
 
 }
