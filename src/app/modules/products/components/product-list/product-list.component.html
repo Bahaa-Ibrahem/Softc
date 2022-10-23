@@ -39,11 +39,9 @@
                     <img [src]="row.ProductImg" class="rounded-circle img-fluid" alt="Loading...">
                 </td>
               </ng-container>
-
-              
           
               <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;" [ngStyle]="{'background': row.AvailablePieces < 5 ? 'red' : '' }" class="clickable" (click)="openProductDetals(row.ProductId)"></tr>
           
               <!-- Row shown when there is no matching data. -->
               <tr class="mat-row" *matNoDataRow>

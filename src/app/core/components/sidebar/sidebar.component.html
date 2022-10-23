@@ -2,12 +2,12 @@
     <div class="side-bar-container">
         <div class="top-icons mt-4">
             <div class="side-bar-brand clickable">
-                <a [routerLink]="['/home']">
+                <a [routerLink]="['/product']">
                     <img class="img-fluid" src="../../../../assets/images/logo/logo.webp" alt="loading...">
                 </a>
             </div>
             <ul class="icons-list">
-                <li routerLink="/home" [class.active]="selectedIndex === 0" (click)="setIndex(0)">
+                <li routerLink="/product" [class.active]="selectedIndex === 0" (click)="setIndex(0)">
                     <a>
                         <span>
                             <!-- <img src="../../../../assets/images/Home_light.svg" alt="" class="img-fluid"> -->
@@ -16,7 +16,7 @@
                         </span>
                     </a>
                 </li>
-                <li routerLink="/home" [class.active]="selectedIndex === 1" (click)="setIndex(1)">
+                <li routerLink="/product" [class.active]="selectedIndex === 1" (click)="setIndex(1)">
                     <a>
                         <span>
                             <i class="fa-regular fa-star"></i>
