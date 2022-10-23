@@ -1,0 +1,41 @@
+// THIS FILE CONTAINS ALL UI VARIABLES
+
+/* color variables */
+$primary-color: #4f008c;
+
+$primary-color-darker: darken($primary-color, 5%);
+$primary-color-lighter: lighten($primary-color, 10%);
+
+$secondary-color: #013461;
+$secondary-color-darker: darken($secondary-color, 5%);
+$secondary-color-lighter: lighten($secondary-color, 10%);
+
+$text-color: #1d252d;
+$text-color-light: #6c757d;
+$text-color-darker: darken($text-color, 10%);
+$text-color-info: #2185d0;
+$text-color-danger: #db2828;
+$text-color-warning: #fbbd08;
+$orange: #f2711c;
+$pink: #e03997;
+$gray: #666A6D;
+$red: #ff375e;
+$green: #00c48c;
+$purple: #ccb8f0;
+$black: black;
+$white: white;
+
+/* border variables */
+
+$border-radius-sm: 3px;
+$border-radius-md: 5px;
+$border-radius-lg: 7px;
+$border-radius-xlg: 10px;
+$border-radius-xxlg: 20px;
+$border-radius-circule: 50%;
+
+/* fonts */
+
+$font-family: 'STC Forward';
+$main-font: "";
+$main-font-bold: "";

@@ -1,0 +1,92 @@
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  padding-right: 0!important;
+  overflow-x: hidden;
+  overflow-y: auto!important;
+  transition: all ease-in-out 400ms;
+}
+
+// for common styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $text-color;
+}
+
+p {
+  line-height: 1.38;
+}
+
+.bg-blue {
+  background-color: $text-color-info;
+}
+
+.bg-pink {
+  background-color: $pink;
+}
+
+.bg-gray {
+  background-color: $gray;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.border-right {
+  border: 2px solid rgba(0, 0, 0, 0.05)
+  {
+    top: none;
+    bottom: none;
+    #{$start}: none;
+  };
+  height: 170px;
+  border-radius: 2px;
+}
+
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  font-size: inherit;
+}
+
+.text-black-50 {
+  color: #8e9aa0!important;
+}
+
+
+@include media-breakpoint-down(sm) { // @media (max-width: 575px)
+  // ...
+}
+
+@include media-breakpoint-between(sm, md) { // @media (min-width: 576px) and (max-width: 767px)
+  // ...
+}
+
+@include media-breakpoint-between(md, lg) { // @media (min-width: 768px) and (max-width: 991px)
+ // ...
+}
+
+@include media-breakpoint-between(lg, xl) { // @media (min-width: 992px) and (max-width: 1199px)
+  // ...
+}
+
+@include media-breakpoint-between(xl, xxl) { // @media (min-width: 1200px) and (max-width: 1399px)
+  // ...
+}
+
+@include media-breakpoint-up(xxl) { // @media (min-width: 1400px)
+  // ...
+}

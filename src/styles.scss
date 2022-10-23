@@ -1,0 +1,80 @@
+// Custom Theming for Angular Material
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$light-primary: mat.define-palette(mat.$indigo-palette);
+$light-accent: mat.define-palette(mat.$pink-palette);
+$light-warn: mat.define-palette(mat.$red-palette);
+
+$light-theme: mat.define-light-theme((
+ color: (
+   primary: $light-primary,
+   accent: $light-accent,
+   warn: $light-warn
+ )
+));
+
+// Define a dark theme
+$dark-primary: mat.define-palette(mat.$pink-palette);
+$dark-accent: mat.define-palette(mat.$blue-gray-palette);
+$light-warn: mat.define-palette(mat.$orange-palette);
+ 
+$dark-theme: mat.define-dark-theme((
+ color: (
+   primary: $dark-primary,
+   accent: $dark-accent,
+   warn: $light-warn
+ )
+));
+
+.darkMode {
+  @include mat.all-component-colors($dark-theme);
+}
+
+@include mat.all-component-themes($light-theme);
+
+// Define custome font 
+@import '@angular/material/theming';
+$custom-typography: mat-typography-config(
+  $font-family: 'STC Forward'
+);
+
+@include angular-material-typography($custom-typography);
+
+/* You can add global styles to this file, and also import other style files */
+@import "./assets/styles/styles-en";
+
+// .ltr {
+//   @import "./assets/styles/styles-en";
+// }
+
+// .rtl {
+//   @import "./assets/styles/styles-ar";
+// }
+
+// regular style toast
+@import 'ngx-toastr/toastr';
+
+// ng select
+@import "@ng-select/ng-select/themes/default.theme.css";
+
+// Fonts
+@font-face {
+  font-family: "Roboto Forward";
+  src: local("Roboto Forward"), url(../src/assets/fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Forward Meduim";
+  src: local("Roboto Forward"), url(../src/assets/fonts/Roboto-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Forward Bold";
+  src: local("Roboto Forward"), url(../src/assets/fonts/Roboto-Bold.ttf) format("truetype");
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto Forward'; }
+body * { font-family: 'Roboto Forward'; }

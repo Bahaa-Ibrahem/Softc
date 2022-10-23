@@ -1,0 +1,94 @@
+.popUpWindow-xl .modal-dialog { 
+  max-width: 80%!important;
+  width: 80%!important;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  @include media-breakpoint-down(md) {
+    max-width: 70%!important;
+    width: 70%!important;
+  }
+  @include media-breakpoint-down(sm) {
+    max-width: 75%!important;
+    width: 75%!important;
+  }
+}
+
+.popUpWindow-lg .modal-dialog { 
+  max-width: 60%!important;
+  width: 60%!important;
+  padding: 10px;
+  margin-left: auto; 
+  margin-right: auto;
+  @include media-breakpoint-down(sm) {
+    max-width: 75%!important;
+    width: 75%!important;
+  }
+}
+
+.popUpWindow-md .modal-dialog { 
+  max-width: 50%!important;
+  width: 50%!important;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  @include media-breakpoint-down(md) {
+    max-width: 60%!important;
+    width: 60%!important;
+  }
+  @include media-breakpoint-down(sm) {
+    max-width: 75%!important;
+    width: 75%!important;
+  }
+}
+
+.popUpWindow-sm .modal-dialog { 
+  max-width: 40%!important;
+  width: 40%!important;
+  padding: 10px;
+  margin-left: auto; 
+  margin-right: auto;
+  @include media-breakpoint-down(lg) {
+    max-width: 50%!important;
+    width: 50%!important;
+  }
+  @include media-breakpoint-down(md) {
+    max-width: 60%!important;
+    width: 60%!important;
+  }
+  @include media-breakpoint-down(sm) {
+    max-width: 70%!important;
+    width: 70%!important;
+  }
+}
+
+.modal-content {
+  border: none!important;
+  .modal-header {
+    border-bottom: none;
+    h5 {
+      font-size: 22px;
+      font-family: 'STC Forward Bold';
+      color: $primary-color;
+    }
+    
+    button:focus {
+      box-shadow: none;
+
+      i {
+        color: #8e9aa0!important;
+      }
+    }
+  }
+
+  .top_dark {
+    // background-color: $primary-color !important;
+    // color: #fff !important;
+  } 
+
+  .modal-body {
+    button {
+      min-width: 85px;
+    }
+  }
+}

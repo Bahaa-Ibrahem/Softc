@@ -1,0 +1,140 @@
+.table {
+  color: inherit;
+
+  & > :not(:first-child) {
+    border-top: 0;
+  }
+
+  thead {
+    tr > th {
+      border-bottom-color: #fff !important;
+      padding-bottom: 40px;
+      vertical-align: middle;
+    }
+  }
+
+  tbody {
+    vertical-align: middle;
+
+    tr:last-child {
+      th {
+        border-bottom-color: #fff !important;
+      }
+    } 
+
+    tr:last-child {
+      td {
+        border-bottom-color: #fff !important;
+      }
+    } 
+  }
+
+  &.custom-table {
+    thead {
+      tr {
+        th {
+          color: #8e9aa0;
+          font-size: 18px;
+          font-weight: normal;
+
+          &:first-child {
+            color: $red;
+            font-family: 'STC Forward Bold';
+          }
+
+          img {
+            background-color: #f5f5f5;
+            background-color: rgba(79, 0, 140, 0.09);;
+            width: 40px;
+            height: 40px;
+            margin: auto 8px;
+            padding: 5px;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        th,td {
+
+          p:nth-child(1) {
+            color: #8e9aa0;
+            font-size: 14px;
+            font-weight: normal;
+          }
+
+          p:nth-child(2) {
+            color: #273b4a;
+            font-size: 16px;
+            font-weight: normal;
+
+            &.email {
+              background-color: #f5f5f5;
+              padding: 5px 10px;
+            }
+
+            span {
+              img {
+                border-radius: 4px;
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.border-bottom-bold {
+    thead {
+      tr {
+        th {
+          border-bottom-width: 4px;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        th,td {
+          border-bottom-width: 4px;
+
+          p:nth-child(1) {
+            color: #8e9aa0;
+            font-size: 14px;
+            font-weight: normal;
+            font-family: 'STC Forward';
+            margin-bottom: 5px !important;
+            width: 75%;
+            line-height: 1.57;
+          }
+
+          p:nth-child(2) {
+            color: #323338;
+            font-size: 14px;
+            font-weight: normal;
+            font-family: 'STC Forward Bold';
+            margin-bottom: 5px !important;
+            width: 75%;
+            line-height: 1.57;
+          }
+
+          .download {
+            width: 75%;
+          }
+  
+        }
+      }
+    }
+  }
+}
+
+.mat-paginator-container {
+  justify-content: center;
+
+  .mat-paginator-page-size-select {
+    width: 56px!important;
+  }
+}

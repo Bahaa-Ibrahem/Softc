@@ -1,0 +1,13 @@
+<main class="d-flex">
+    <div class="d-block">
+        <app-sidebar></app-sidebar>
+    </div>
+
+    <section class="main-content d-flex flex-column flex-grow-1" [ngStyle]="currentLang == 'en' ? {'margin-left': '75px'} : {'margin-right': '75px'}">
+        <app-navbar></app-navbar>
+
+        <section class="main-page d-flex flex-column flex-grow-1 position-relative">
+            <router-outlet></router-outlet>
+        </section>
+    </section>
+</main>
